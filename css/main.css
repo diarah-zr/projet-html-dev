@@ -13,8 +13,8 @@ header{
         text-transform: uppercase;
         font-weight: bolder;
     }
-    nav ul li{
-        
+    nav ul li a{
+        display: grid;
     }
 }
 .gallery-content{
