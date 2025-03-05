@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("loaded");
+    console.log("load");
 });
 
 /*variable*/
