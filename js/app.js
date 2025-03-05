@@ -1,4 +1,17 @@
-document.addEventListener("DOMContentLoaded");
-console.log("chargé");
-const lang = ["fr", "mami", true];
-console.table(lang);
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("loaded");
+});
+
+/*variable*/
+/*let nom = String("java")
+const version = parseFloat(6.5)
+console.log(version)
+
+const table = ["html","css",true];
+const user = {
+    nom: "Diakité",
+    prénom: "Awa",
+    age: "21",
+
+}
+console.table(table)*/
