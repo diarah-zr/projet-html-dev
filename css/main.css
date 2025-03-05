@@ -1,22 +1,53 @@
 @import url(./reset.css);
 
 /* theme */
-
+body{
+    margin: 1%;
+}
 
 header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    align-items: center;
+    /*flex-direction: column;*/
 
     h1{
         background-color: #222;
-        line-height: 8rem;
+        line-height: 5rem;
         color: #fff;
-        text-align: center;
+        /*text-align: center;*/
         text-transform: uppercase;
         font-weight: bolder;
+        font-size: 2.5rem;
+        padding-left: 2rem;
+        
     }
-    nav ul li a{
-        display: grid;
+    
+    nav ul{
+    display: flex;
+    align-items: center;
+    }
+    nav ul li *{
+        display: block;
+        color: #fff;
+        text-align: center;
+        transition: all .8s  ease-in-out;
+    }
+    nav ul li {
+        width: 15rem;
+        /*background-color: #ccc;*/
+        line-height: 8.5rem;
+        text-transform: uppercase;
+
+    }
+    /* survole*/
+    nav ul li:hover a{
+        background-color: #42414d;
+        color: #fff;
     }
 }
+
 .gallery-content{
      max-width: 90.0rem;
     margin: 5rem auto 2rem;
@@ -91,4 +122,53 @@ details > summary h3::before{
 
 footer *{
     text-align: center;
+}
+/* mobile*/
+@media screen and (max-width: 90.0rem){
+    header{
+      flex-direction: column; 
+      h1{
+        font-size: 2rem;
+      }
+    }
+    .gallery-content {
+      width: auto;
+      margin: 5rem auto 2rem;
+    
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+      
+    }
+    nav ul{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+   }
+   
+}
+
+@media screen and (orientation: landscape){
+  header{ 
+    flex-direction: row; 
+    h1{
+      font-size: 2rem;
+    }
+  }
+ /* nav{
+    display: none;
+  }*/
+  nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+ }
+ details summary {
+      h3{
+        font-size: xx-large;
+
+    }
+  }
 }
