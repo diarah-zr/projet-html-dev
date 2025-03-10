@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("load");
+    console.log("chargé");
+    let elTitre;
+    /* elTitre = document.querySelector("title")
+    mainTitle = document.querySelector("headern h1")
+    elTitre.innerText = "Développement PHP" */
+
+    const mainTitle = document.querySelectorAll("title , h1");
+    mainTitle.forEach(el => el.innerText = "Développeure PHP");
 });
 
 /*variable*/
